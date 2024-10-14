@@ -9,29 +9,45 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Alex Vizuete Pereira</h1>
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
         <section id="resumen">
             <h2>Resumen</h2>
-            <p>Actualmente me encuentro estudiando la carrera de Ingeniería en ciencias computacionles en la ESPOL.
-            </p>
+            <div class="resumen-container">
+                <p>
+                    Soy un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL), con un enfoque en el desarrollo de habilidades técnicas y analíticas. Me considero una persona trabajadora, responsable y orientada a resultados, con experiencia en el manejo de proyectos académicos y capacidad para adaptarme rápidamente a nuevas tecnologías. Busco oportunidades para aplicar mis conocimientos y seguir desarrollándome profesionalmente en el campo de la ingeniería de software.
+                </p>
+                <img src="https://placehold.co/300x300" alt="imagen-resumen">
+            </div>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+            <div class="educacion-container">
+                <div>
+                    <h3>Escuela Superior Politécnica del Litoral (ESPOL)</h3>
+                    <p>Estudié Ingeniería en ciencias computacionales en la Universidad Superior Politécnica del Litoral
+                        desde el año 2022 hasta 2026. En dicha carrera estudié diversas áreas del campo de la computación,
+                        como el desarrollo de software, redes, bases de datos, optimización de procesos computacionles,
+                        ingeniería y arquitectura de software.
+                    </p>
+                </div>
+                <img src="images/unnamed.png" alt="logo_espol">
+            </div>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
@@ -39,7 +55,7 @@
         <section id="proyectos">
             <h2>Proyectos</h2>
         </section>
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
             <form>
                 <label for="nombre">Nombre Completo:</label>
@@ -51,17 +67,19 @@
                 <label for="educacion">Educación:</label>
                 <textarea id="educacion" name="educacion" rows="5" required></textarea>
                 <label>Habilidades Técnicas:</label><br>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript">
-                JavaScript
+                <div class="habilidades">
+                    <input type="checkbox" name="habilidades" value="HTML"> HTML</input>    
+                    <input type="checkbox" name="habilidades" value="CSS"> CSS</input>  
+                    <input type="checkbox" name="habilidades" value="JavaScript">
+                    JavaScript</input>  
+                </div>
                 <label for="intereses">Intereses:</label>
                 <select id="intereses" name="intereses">
                     <option value="desarrollo">Desarrollo Web</option>
                     <option value="diseno">Diseño Gráfico</option>
                     <option value="marketing">Marketing Digital</option>
                 </select>
-                <button type="submit">Enviar</button>
+                <button class="submit-btn" type="submit">Enviar</button>
             </form>
         </section>
         <footer>
