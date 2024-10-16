@@ -20,20 +20,51 @@
         </ul>
     </nav>
     <header>
-        <h1>Alex Vizuete Pereira</h1>
+        <h1>Bienvenido/a a la hoja de vida de</h1>
     </header>
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h1 id="typewriter"></h1>
             <div class="resumen-container">
                 <p>
                     Soy un estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL), con un enfoque en el desarrollo de habilidades técnicas y analíticas. Me considero una persona trabajadora, responsable y orientada a resultados, con experiencia en el manejo de proyectos académicos y capacidad para adaptarme rápidamente a nuevas tecnologías. Busco oportunidades para aplicar mis conocimientos y seguir desarrollándome profesionalmente en el campo de la ingeniería de software.
                 </p>
-                <img src="https://placehold.co/300x300" alt="imagen-resumen">
+                <img src="images/me.jpeg" alt="imagen-resumen">
             </div>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Título</th>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Referencia</th>
+                    </tr>
+                    <tr>
+                        <td>Portafolio digital de Artista</td>
+                        <td>10/09/2024</td>
+                        <td>Desarrollo estático de la página web de una artista para la presentación de su portafolio.</td>
+                        <td><a href="">Go</a></td>
+                    </tr>
+                    <tr>
+                        <td>Prototipo de sistema de citas médicas</td>
+                        <td>16/02/2023</td>
+                        <td>Utilización de spring-boot framework para crear una aplicación web fullstack para un sistema
+                            de citas médicas.
+                        </td>
+                        <td><a href="">Go</a></td>
+                    </tr>
+                    <tr>
+                        <td>Prototipo de sistema de citas médicas</td>
+                        <td>16/02/2023</td>
+                        <td>Utilización de spring-boot framework para crear una aplicación web fullstack para un sistema
+                            de citas médicas.
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
@@ -50,46 +81,44 @@
             </div>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilities-container">
+                <img src="images/HTML5_logo_and_wordmark.svg.png" alt="">
+                <img src="images/css.png" alt="">
+                <img src="images/javascript.png" alt="">
+                <img src="images/java.png" alt="">
+                <img src="images/python.png" alt="">
+                <img src="images/spring-logo.png" alt="">
+                <img src="images/db.png" alt="">
+            </div>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2>Contáctame</h2>
             <form>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="experiencia">Experiencia Laboral:</label>
-                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-                <label for="educacion">Educación:</label>
+                <label for="experiencia">Motivo del contacto:</label>
+                <input type="text" id="experiencia" name="experiencia" required></textarea>
+                <label for="educacion">Mensaje:</label>
                 <textarea id="educacion" name="educacion" rows="5" required></textarea>
-                <label>Habilidades Técnicas:</label><br>
-                <div class="habilidades">
-                    <input type="checkbox" name="habilidades" value="HTML"> HTML</input>    
-                    <input type="checkbox" name="habilidades" value="CSS"> CSS</input>  
-                    <input type="checkbox" name="habilidades" value="JavaScript">
-                    JavaScript</input>  
-                </div>
-                <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="diseno">Diseño Gráfico</option>
-                    <option value="marketing">Marketing Digital</option>
-                </select>
                 <button class="submit-btn" type="submit">Enviar</button>
             </form>
         </section>
         <footer>
             <span>&copy; Alex Vizuete - 2024</span>
             <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">LinkedLn</a></li>
+                <li><a target="_blank" href="https://github.com/ajvizuet">Github</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/alex-vizuete-pereira-75700027a/">LinkedLn</a></li>
             </ul>
         </footer>
     </main>
+
+    <script src="scripts/typewriter.js"></script>
 </body>
 
 </html>
