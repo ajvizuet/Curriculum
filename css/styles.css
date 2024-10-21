@@ -162,7 +162,7 @@ tr a:hover {
 .habilities-container {
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 3rem;
 }
 
@@ -183,10 +183,11 @@ tr a:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
     .habilities-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
