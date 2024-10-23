@@ -18,6 +18,7 @@ body {
     box-sizing: border-box;
 }
 
+
 nav {
     position: sticky;
     top: 0;
@@ -107,6 +108,18 @@ section h2 {
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+#map { 
+    width: 100%; 
+    height: 580px; 
+    box-shadow: 5px 5px 5px #888; 
+    z-index: 0;
+}
+
+#logo_espol {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
 .table-container {
     margin: 3rem 0;
     overflow-x: auto;
@@ -160,7 +173,7 @@ tr a:hover {
 }
 
 .habilities-container {
-    margin: 2rem auto;
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 3rem;
@@ -168,8 +181,8 @@ tr a:hover {
 
 .habilities-container img {
     padding: 1rem;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     margin: 0 auto;
     transition: all 0.3s ease;
 }
