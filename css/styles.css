@@ -88,7 +88,7 @@ section h2 {
 .resumen-container img {
     border-radius: 10px;
     width: 300px;
-    height: auto;
+    height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -102,6 +102,12 @@ section h2 {
     }
 }
 
+@media(max-width: 576px) {
+    #video-espol {
+        width: 90%;
+    }
+}
+
 .resumen-container img:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -109,16 +115,13 @@ section h2 {
 }
 
 #map { 
-    width: 100%; 
-    height: 580px; 
+    width: 80%; 
+    margin: 0 auto;
+    height: 500px; 
     box-shadow: 5px 5px 5px #888; 
     z-index: 0;
 }
 
-#logo_espol {
-    margin: 0 auto;
-    max-width: 60%;
-}
 
 .table-container {
     margin: 3rem 0;
@@ -166,10 +169,25 @@ tr a:hover {
 
 .educacion-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 2rem;
-    width: 70%;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.educacion-container-info {
+    width: 80%;
+}
+
+@media(max-width: 768px) {
+    #map {
+        width: 90%;
+    }
+
+    .educacion-container {
+        flex-direction: column;
+    }
 }
 
 .habilities-container {
